@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryse Holding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f0f0f;
+            --text-color: #ffffff;
+            --accent-color: #888888;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+        }
+        .logo {
+            margin-bottom: 50px;
+            max-width: 250px;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        h1 {
+            font-weight: 300;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .info {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin-bottom: 40px;
+        }
+        .contact-link {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+            transition: opacity 0.3s;
+        }
+        .contact-link:hover {
+            opacity: 0.7;
+        }
+        footer {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://placehold.co/400x120/0f0f0f/ffffff?text=RYSE+HOLDING" alt="Ryse Holding Logo">
+        </div>
+
+        <h1>Ryse Holding</h1>
+        
+        <div class="info">
+            <p>
+                Rykestraße 7, Berlin, 10705, Germany<br>
+                Managed by Max-Otto Griesam
+            </p>
+            <p>
+                For inquiries: <a href="mailto:max.griesam@ryse.eu" class="contact-link">max.griesam@ryse.eu</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="imprint.html">Imprint / Impressum</a>
+    </footer>
+
+</body>
+</html>
