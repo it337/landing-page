@@ -29,47 +29,55 @@
         .container {
             max-width: 800px;
             padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Ensures children are centered in the flex container */
         }
         .logo {
             margin-bottom: 50px;
-            max-width: 250px;
+            width: 100%; /* Spans container width */
+            display: flex;
+            justify-content: center; /* Centers image horizontally */
         }
         .logo img {
-            width: 100%;
+            max-width: 300px;
             height: auto;
         }
         h1 {
             font-weight: 300;
-            font-size: 2.5rem;
-            letter-spacing: 0.1em;
+            font-size: 2rem;
+            letter-spacing: 0.15em;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .info {
-            line-height: 1.8;
-            font-size: 1.1rem;
+            line-height: 2;
+            font-size: 1rem;
             color: var(--accent-color);
             margin-bottom: 40px;
+            letter-spacing: 0.02em;
         }
         .contact-link {
             color: var(--text-color);
             text-decoration: none;
-            border-bottom: 1px solid var(--text-color);
-            transition: opacity 0.3s;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease;
         }
         .contact-link:hover {
-            opacity: 0.7;
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
         }
         footer {
-            position: absolute;
-            bottom: 30px;
-            font-size: 0.8rem;
+            position: fixed;
+            bottom: 40px;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.1em;
         }
         footer a {
             color: var(--accent-color);
             text-decoration: none;
+            transition: color 0.3s;
         }
         footer a:hover {
             color: var(--text-color);
@@ -80,24 +88,25 @@
 
     <div class="container">
         <div class="logo">
-            <img src="https://placehold.co/400x120/0f0f0f/ffffff?text=RYSE+HOLDING" alt="Ryse Holding Logo">
+            <img src="logo.png" alt="Ryse Holding Logo">
         </div>
 
         <h1>Ryse Holding</h1>
         
         <div class="info">
             <p>
-                Rykestraße 7, Berlin, 10705, Germany<br>
-                Managed by Max-Otto Griesam
+                Rykestraße 7<br>
+                10705 Berlin, Germany<br>
+                <span style="color: #555;">Max-Otto Griesam</span>
             </p>
             <p>
-                For inquiries: <a href="mailto:max.griesam@ryse.eu" class="contact-link">max.griesam@ryse.eu</a>
+                Inquiries: <a href="mailto:max.griesam@ryse.eu" class="contact-link">max.griesam@ryse.eu</a>
             </p>
         </div>
     </div>
 
     <footer>
-        <a href="imprint.html">Imprint / Impressum</a>
+        <a href="imprint.html">Imprint</a>
     </footer>
 
 </body>
